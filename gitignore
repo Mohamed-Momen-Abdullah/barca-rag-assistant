@@ -1,0 +1,35 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# Secrets / environment
+.env
+backend/.env
+frontend/.env
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS cruft
+.DS_Store
+
+# --- Data corpus and vector store ---
+# The raw scraped corpus is small for this project (~180KB across 16 files)
+# and is committed for reproducibility. If your corpus grows large, uncomment
+# the line below and instead document how to regenerate it in the README
+# (i.e. `python scraper/scrape_fcb_history.py && python scraper/scrape_wikipedia.py`).
+# data/raw/
+
+# The persisted vector store (data/vector_store/, backend/data/vector_store/)
+# is committed as long as it stays under ~50MB (see Phase 5 guidance). If it
+# grows past that, uncomment these and note in the README how to regenerate
+# it by re-running notebooks/rag_pipeline.ipynb.
+# data/vector_store/
+# backend/data/vector_store/
