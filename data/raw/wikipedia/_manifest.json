@@ -1,0 +1,20 @@
+[
+  {
+    "title": "history_of_fc_barcelona",
+    "url": "https://en.wikipedia.org/wiki/History_of_FC_Barcelona",
+    "file": "data/raw/wikipedia/history_of_fc_barcelona.txt",
+    "char_count": 72145
+  },
+  {
+    "title": "list_of_fc_barcelona_seasons",
+    "url": "https://en.wikipedia.org/wiki/List_of_FC_Barcelona_seasons",
+    "file": "data/raw/wikipedia/list_of_fc_barcelona_seasons.txt",
+    "char_count": 15806
+  },
+  {
+    "title": "camp_nou",
+    "url": "https://en.wikipedia.org/wiki/Camp_Nou",
+    "file": "data/raw/wikipedia/camp_nou.txt",
+    "char_count": 32406
+  }
+]
