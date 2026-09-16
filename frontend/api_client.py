@@ -8,11 +8,25 @@ never hardcoded, per the assignment's requirements.
 import os
 
 import requests
+import streamlit as st
 from dotenv import load_dotenv
 
 load_dotenv()
 
-API_BASE_URL = os.environ.get("API_BASE_URL", "http://localhost:8000")
+
+def _get_api_base_url() -> str:
+    # On Streamlit Cloud, config comes from st.secrets (set in the app's
+    # dashboard), since .env files are gitignored and never deployed.
+    # Locally, .env / the environment is used instead.
+    try:
+        if "API_BASE_URL" in st.secrets:
+            return st.secrets["API_BASE_URL"]
+    except Exception:
+        pass
+    return os.environ.get("API_BASE_URL", "http://localhost:8000")
+
+
+API_BASE_URL = _get_api_base_url()
 REQUEST_TIMEOUT_SECONDS = 60  # local LLM generation can take a while
 
 
