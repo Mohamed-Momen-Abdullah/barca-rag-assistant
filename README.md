@@ -232,7 +232,5 @@ The one failure is a genuinely interesting case, not a simple bug: asked "When d
 
 ![Barça History RAG Assistant answering a question about Johan Cruyff's signing, with correct sources cited](docs/screenshots/frontend-chat-demo.png)
 
-## Notes
-
-- This is an **individual submission** for the Core Track (text-only RAG). No shared implementation was used.
-- The Extended Track's CV/YOLO component was considered (a crest/kit-era image classifier) but not built, due to the project's time constraints — see project discussion for details.
+## Demo
+- This is a steamlit deployed app demo that can be accessed when running the backend first https://barca-rag-assistant.streamlit.app/.
